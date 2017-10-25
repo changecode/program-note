@@ -77,3 +77,7 @@ docker run -d --name=tomcat_test -it -v /tomcat_self/test:/tomcat/webapps -p 500
 
 --name=tomcat_test: 是给容器自定义一个名称，用来区分业务，为测试环境
 -v:给测试的容器指定挂载的本地目录为/ylkj/test 以后测试的包就发布到Host主机的这个目录下面 /tomcat/webapps是tomcat的运行环境目录 冒号":"前面的目录是宿主机目录，后面的目录是容器内目录
+
+
+docker run -d -i -t centos /bin/bash 这样centos一直停留在后台运行
+docker attach <ContainerID>  进入centos
